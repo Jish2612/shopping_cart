@@ -77,7 +77,7 @@ checkoutBtn.addEventListener("click", () => {
   let total = cart.reduce((sum, item) => sum + item.price, 0);
 
   const options = {
-    key: "rzp_test_1DP5mmOlF5G5ag",
+    key: "rzp_test_PV1oQ0oMtgXOsq",
     amount: Math.round(total * 100),
     currency: "INR",
     name: "MeShop",
