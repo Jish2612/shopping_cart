@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeShop</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">MeShop.</div>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../login/index.html">Login</a>
+        <a href="../signup/index.html">Signup</a>
+        <a href="../cart/index.html">My Cart</a>
+        <a href="../profile/index.html">Profile</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- SIDEBAR -->
+<aside>
+
+  <h3>Filters</h3>
+
+  <section>
+    <h4>Colors</h4>
+    <ul>
+      <li><input type="checkbox" data-color="red"> Red</li>
+      <li><input type="checkbox" data-color="blue"> Blue</li>
+      <li><input type="checkbox" data-color="green"> Green</li>
+      <li><input type="checkbox" data-color="black"> Black</li>
+      <li><input type="checkbox" data-color="white"> White</li>
+    </ul>
+  </section>
+
+  <section>
+    <h4>Sizes</h4>
+    <ul>
+      <li><input type="checkbox" data-size="s"> S</li>
+      <li><input type="checkbox" data-size="m"> M</li>
+      <li><input type="checkbox" data-size="l"> L</li>
+      <li><input type="checkbox" data-size="xl"> XL</li>
+    </ul>
+  </section>
+
+  <section>
+    <h4>Rating</h4>
+    <input type="range" id="ratingFilter" min="0" max="5" value="0">
+    <div class="rating-labels">
+      <span>0</span>
+      <span>5</span>
+    </div>
+  </section>
+
+  <section>
+    <h4>Price Range</h4>
+    <ul>
+      <li><input type="checkbox" data-price="0-25"> $0 to $25</li>
+      <li><input type="checkbox" data-price="25-50"> $25 to $50</li>
+      <li><input type="checkbox" data-price="50-100"> $50 to $100</li>
+      <li><input type="checkbox" data-price="100"> $100 onwards</li>
+    </ul>
+  </section>
+
+  <button id="applyFilterBtn" class="apply-btn">Apply Filter</button>
+
+</aside>
+
+      <!-- MAIN CONTENT -->
+      <div class="main-content">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+
+        <div class="filters">
+          <div class="filter active" data-category="all">All</div>
+          <div class="filter" data-category="men's clothing">Mens</div>
+          <div class="filter" data-category="women's clothing">Womens</div>
+          <div class="filter" data-category="jewelery">Jewellery</div>
+          <div class="filter" data-category="electronics">Electronics</div>
+        </div>
+
+        <section>
+          <h3>Products</h3>
+          <div class="items"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">MeShop.</div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../login/index.html">Login</a>
+      <a href="../signup/index.html">Signup</a>
+      <a href="../cart/index.html">My Cart</a>
+      <a href="../profile/index.html">Profile</a>
+    </nav>
+  </header>
+
+  <!-- FORM -->
+  <section class="form-page">
+    <h2>Login</h2>
+
+    <form id="loginForm" class="form-container">
+      <input type="email" placeholder="Email" id="email">
+      <input type="password" placeholder="Password" id="password">
+
+      <button id="btn" class="btn black">Login</button>
+      <p id="error-message" style="color: red;"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

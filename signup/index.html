@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">MeShop.</div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../login/index.html">Login</a>
+      <a href="../signup/index.html">Signup</a>
+      <a href="../cart/index.html">My Cart</a>
+      <a href="../profile/index.html">Profile</a>
+    </nav>
+  </header>
+
+  <!-- FORM SECTION -->
+  <section class="form-page">
+    <h2>Signup</h2>
+
+    <form id="signupForm" class="form-container">
+      <input type="text" placeholder="First Name" id="firstName">
+      <input type="text" placeholder="Last Name" id="lastName">
+      <input type="email" placeholder="Email" id="email">
+      <input type="password" placeholder="Password" id="password">
+      <input type="password" placeholder="Confirm Password" id="confirmPassword">
+      <p id="error-message" style="color: red;"></p>
+
+      <button id="btn" class="btn black">Signup</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
